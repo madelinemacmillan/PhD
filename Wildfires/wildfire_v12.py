@@ -236,6 +236,9 @@ fires['DT_']=fires['Date_Time']
 fires = fires.set_index('Date_Time')
 fires['Fire']=1
 ##all_features_test=all_features
+
+
+#merging features together
 all_features=all_features.merge(fires,how='outer',right_index=True,left_index=True)
 all_features_test=all_features
 all_features=all_features.merge(weather,how='outer',right_index=True,left_index=True)
