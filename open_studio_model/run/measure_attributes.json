@@ -1,0 +1,6 @@
+{
+  "Add Output Diagnostics": {
+    "outputDiagnostic": "DisplayExtraWarnings",
+    "applicable": true
+  }
+}

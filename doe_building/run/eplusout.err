@@ -1,0 +1,847 @@
+Program Version,EnergyPlus, Version 9.6.0-4b123cf80f, YMD=2022.03.25 18:00,
+   ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
+   **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=87865 differs by more than 10% from Standard Barometric Pressure=100058.
+   **   ~~~   ** ...occurs in DesignDay=EL PASO INTERNATIONAL AP  UT ANN CLG .4% CONDNS DB=>MWB, Standard Pressure (based on elevation) will be used.
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="ECONOMIZER MAX OA FRACTION 70 PCT DEFAULT", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS OFF DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON CONTINUOUS", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** CheckUsedConstructions: There are 11 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=SMALLHOTEL 2010 SLAB FLOOR
+   ************* Construction=TYPICAL INSULATED BASEMENT MASS WALL
+   ************* Construction=TYPICAL INSULATED EXTERIOR MASS FLOOR R-9.35
+   ************* Construction=TYPICAL INTERIOR CEILING
+   ************* Construction=TYPICAL INTERIOR DOOR
+   ************* Construction=TYPICAL INTERIOR FLOOR
+   ************* Construction=TYPICAL INTERIOR PARTITION
+   ************* Construction=TYPICAL INTERIOR WINDOW
+   ************* Construction=TYPICAL OVERHEAD DOOR R-0.86
+   ************* Construction=TYPICAL WOOD JOIST ATTIC FLOOR R-37.04
+   ************* Construction=U 1.17 SHGC 0.39 SIMPLE GLAZING SKYLIGHT U-1.17 SHGC 0.39
+   ** Warning ** GetInternalHeatGains: People="OFFICE WHOLEBUILDING - SM OFFICE PEOPLE" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="OFFICE WHOLEBUILDING - SM OFFICE PEOPLE" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="OFFICE WHOLEBUILDING - SM OFFICE PEOPLE" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="OFFICE WHOLEBUILDING - SM OFFICE PEOPLE" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="OFFICE WHOLEBUILDING - SM OFFICE PEOPLE" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetDaylightingControls: Fraction of zone or space controlled by the Daylighting reference points is < 1.0.
+   **   ~~~   ** ..discovered in Daylighting:Controls="PERIMETER_ZN_1 ZN DAYLIGHTINGCONTROLS", only 0.000 of the zone or space is controlled.
+   ** Warning ** GetDaylightingControls: Fraction of zone or space controlled by the Daylighting reference points is < 1.0.
+   **   ~~~   ** ..discovered in Daylighting:Controls="PERIMETER_ZN_2 ZN DAYLIGHTINGCONTROLS", only 0.000 of the zone or space is controlled.
+   ** Warning ** GetDaylightingControls: Fraction of zone or space controlled by the Daylighting reference points is < 1.0.
+   **   ~~~   ** ..discovered in Daylighting:Controls="PERIMETER_ZN_3 ZN DAYLIGHTINGCONTROLS", only 0.000 of the zone or space is controlled.
+   ** Warning ** GetDaylightingControls: Fraction of zone or space controlled by the Daylighting reference points is < 1.0.
+   **   ~~~   ** ..discovered in Daylighting:Controls="PERIMETER_ZN_4 ZN DAYLIGHTINGCONTROLS", only 0.000 of the zone or space is controlled.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=87865 differs by more than 10% from Standard Barometric Pressure=100058.
+   **   ~~~   ** ...occurs in DesignDay=EL PASO INTERNATIONAL AP  UT ANN HTG 99.6% CONDNS DB, Standard Pressure (based on elevation) will be used.
+   ************* Beginning System Sizing Calculations
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="CORE_ZN ZN HP HTG COIL 32 CLG KBTU/HR 7.7HSPF", invalid
+   **   ~~~   ** ...Part Load Fraction Correlation Curve Name = DXHEAT-NECB2011-REF-PLFFPLR has out of range value.
+   **   ~~~   ** ...Curve maximum must be <= 1.0, curve max at PLR = 0.99 is 1.005
+   **   ~~~   ** ...Setting curve maximum to 1.0 and simulation continues.
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="CORE_ZN ZN HP HTG COIL 32 CLG KBTU/HR 7.7HSPF" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = CORE_ZN ZN HP HTG COIL DEFROST EIR FUNC OF TEMP CURVE 1 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.787
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PERIMETER_ZN_1 ZN HP HTG COIL 35 CLG KBTU/HR 7.7HSPF" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = PERIMETER_ZN_1 ZN HP HTG COIL DEFROST EIR FUNC OF TEMP CURVE 1 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.787
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PERIMETER_ZN_2 ZN HP HTG COIL 26 CLG KBTU/HR 7.7HSPF" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = PERIMETER_ZN_2 ZN HP HTG COIL DEFROST EIR FUNC OF TEMP CURVE 1 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.787
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PERIMETER_ZN_3 ZN HP HTG COIL 34 CLG KBTU/HR 7.7HSPF" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = PERIMETER_ZN_3 ZN HP HTG COIL DEFROST EIR FUNC OF TEMP CURVE 1 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.787
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PERIMETER_ZN_4 ZN HP HTG COIL 30 CLG KBTU/HR 7.7HSPF" curve values
+   **   ~~~   ** ... Defrost Energy Input Ratio Function of Temperature Curve Name = PERIMETER_ZN_4 ZN HP HTG COIL DEFROST EIR FUNC OF TEMP CURVE 1 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.787
+   ** Warning ** AirLoopHVAC:UnitarySystem = CORE_ZN ZN PSZ-AC-1 UNITARY HP
+   **   ~~~   ** Method used to determine the cooling supply air flow rate is not specified when cooling coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = CORE_ZN ZN PSZ-AC-1 UNITARY HP
+   **   ~~~   ** Method used to determine the heating supply air flow rate is not specified when heating coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_1 ZN PSZ-AC-2 UNITARY HP
+   **   ~~~   ** Method used to determine the cooling supply air flow rate is not specified when cooling coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_1 ZN PSZ-AC-2 UNITARY HP
+   **   ~~~   ** Method used to determine the heating supply air flow rate is not specified when heating coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_2 ZN PSZ-AC-3 UNITARY HP
+   **   ~~~   ** Method used to determine the cooling supply air flow rate is not specified when cooling coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_2 ZN PSZ-AC-3 UNITARY HP
+   **   ~~~   ** Method used to determine the heating supply air flow rate is not specified when heating coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_3 ZN PSZ-AC-4 UNITARY HP
+   **   ~~~   ** Method used to determine the cooling supply air flow rate is not specified when cooling coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_3 ZN PSZ-AC-4 UNITARY HP
+   **   ~~~   ** Method used to determine the heating supply air flow rate is not specified when heating coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_4 ZN PSZ-AC-5 UNITARY HP
+   **   ~~~   ** Method used to determine the cooling supply air flow rate is not specified when cooling coil is present.
+   ** Warning ** AirLoopHVAC:UnitarySystem = PERIMETER_ZN_4 ZN PSZ-AC-5 UNITARY HP
+   **   ~~~   ** Method used to determine the heating supply air flow rate is not specified when heating coil is present.
+   ************* Beginning Plant Sizing Calculations
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 5
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="CORE_ZN ZN".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="PERIMETER_ZN_1 ZN".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="PERIMETER_ZN_2 ZN".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 3
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="PERIMETER_ZN_3 ZN".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 4
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="PERIMETER_ZN_4 ZN".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem CORE_ZN ZN PSZ-AC-1 UNITARY HP
+   **   ~~~   ** User-Specified Maximum Supply Air Temperature [C] = 80.00000
+   **   ~~~   ** differs from Design Size Maximum Supply Air Temperature [C] = 50.00000
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = CORE_ZN ZN PSZ-AC-1 1SPD DX HP CLG COIL 32KBTU/HR 13.0SEER but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=CORE_ZN ZN PSZ-AC-1 1SPD DX HP CLG COIL 32KBTU/HR 13.0SEER:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-FINE STORAGE DX COIL CAP-FT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-AC DX COIL EIR-FT
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem PERIMETER_ZN_1 ZN PSZ-AC-2 UNITARY HP
+   **   ~~~   ** User-Specified Maximum Supply Air Temperature [C] = 80.00000
+   **   ~~~   ** differs from Design Size Maximum Supply Air Temperature [C] = 50.00000
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = PERIMETER_ZN_1 ZN PSZ-AC-2 1SPD DX HP CLG COIL 35KBTU/HR 13.0SEER but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=PERIMETER_ZN_1 ZN PSZ-AC-2 1SPD DX HP CLG COIL 35KBTU/HR 13.0SEER:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-FINE STORAGE DX COIL CAP-FT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-AC DX COIL EIR-FT
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem PERIMETER_ZN_2 ZN PSZ-AC-3 UNITARY HP
+   **   ~~~   ** User-Specified Maximum Supply Air Temperature [C] = 80.00000
+   **   ~~~   ** differs from Design Size Maximum Supply Air Temperature [C] = 50.00000
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = PERIMETER_ZN_2 ZN PSZ-AC-3 1SPD DX HP CLG COIL 26KBTU/HR 13.0SEER but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=PERIMETER_ZN_2 ZN PSZ-AC-3 1SPD DX HP CLG COIL 26KBTU/HR 13.0SEER:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-FINE STORAGE DX COIL CAP-FT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-AC DX COIL EIR-FT
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem PERIMETER_ZN_3 ZN PSZ-AC-4 UNITARY HP
+   **   ~~~   ** User-Specified Maximum Supply Air Temperature [C] = 80.00000
+   **   ~~~   ** differs from Design Size Maximum Supply Air Temperature [C] = 50.00000
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = PERIMETER_ZN_3 ZN PSZ-AC-4 1SPD DX HP CLG COIL 34KBTU/HR 13.0SEER but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=PERIMETER_ZN_3 ZN PSZ-AC-4 1SPD DX HP CLG COIL 34KBTU/HR 13.0SEER:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-FINE STORAGE DX COIL CAP-FT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-AC DX COIL EIR-FT
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem PERIMETER_ZN_4 ZN PSZ-AC-5 UNITARY HP
+   **   ~~~   ** User-Specified Maximum Supply Air Temperature [C] = 80.00000
+   **   ~~~   ** differs from Design Size Maximum Supply Air Temperature [C] = 50.00000
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = PERIMETER_ZN_4 ZN PSZ-AC-5 1SPD DX HP CLG COIL 30KBTU/HR 13.0SEER but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=PERIMETER_ZN_4 ZN PSZ-AC-5 1SPD DX HP CLG COIL 30KBTU/HR 13.0SEER:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-FINE STORAGE DX COIL CAP-FT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = PSZ-AC DX COIL EIR-FT
+   ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=MAIN SERVICE WATER LOOP WATER MAINS PRESSURE DRIVEN
+   ** Warning ** Output:Meter: invalid Key Name="DISTRICTCOOLING:FACILITY" - not found.
+   ** Warning ** Output:Meter: invalid Key Name="DISTRICTHEATING:FACILITY" - not found.
+   ** Warning ** Output:Meter:MeterFileOnly requested for "Electricity:Facility" (TimeStep), already on "Output:Meter". Will report to both eplusout.eso and eplusout.mtr
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'HEATING:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'COOLING:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'INTERIOR LIGHTING:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'EXTERIOR LIGHTING:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'FANS:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'PUMPS:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'HEAT REJECTION:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'HUMIDIFICATION:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'HEAT RECOVERY:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'WATER SYSTEMS:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'REFRIGERATION:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO1' invalid Variable or Meter Name 'GENERATORS:FUELOILNO1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'HEATING:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'COOLING:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'INTERIOR LIGHTING:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'EXTERIOR LIGHTING:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'FANS:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'PUMPS:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'HEAT REJECTION:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'HUMIDIFICATION:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'HEAT RECOVERY:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'WATER SYSTEMS:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'REFRIGERATION:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - FUELOILNO2' invalid Variable or Meter Name 'GENERATORS:FUELOILNO2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'HEATING:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'COOLING:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'INTERIOR LIGHTING:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'EXTERIOR LIGHTING:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'FANS:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'PUMPS:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'HEAT REJECTION:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'HUMIDIFICATION:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'HEAT RECOVERY:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'WATER SYSTEMS:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'REFRIGERATION:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - PROPANEGAS' invalid Variable or Meter Name 'GENERATORS:PROPANEGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'HEATING:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'COOLING:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'INTERIOR LIGHTING:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'EXTERIOR LIGHTING:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'FANS:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'PUMPS:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'HEAT REJECTION:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'HUMIDIFICATION:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'HEAT RECOVERY:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'WATER SYSTEMS:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'REFRIGERATION:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - COAL' invalid Variable or Meter Name 'GENERATORS:COAL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'HEATING:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'COOLING:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'INTERIOR LIGHTING:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'EXTERIOR LIGHTING:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'FANS:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'PUMPS:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'HEAT REJECTION:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'HUMIDIFICATION:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'HEAT RECOVERY:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'WATER SYSTEMS:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'REFRIGERATION:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DIESEL' invalid Variable or Meter Name 'GENERATORS:DIESEL'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'HEATING:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'COOLING:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'INTERIOR LIGHTING:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'EXTERIOR LIGHTING:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'FANS:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'PUMPS:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'HEAT REJECTION:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'HUMIDIFICATION:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'HEAT RECOVERY:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'WATER SYSTEMS:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'REFRIGERATION:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - GASOLINE' invalid Variable or Meter Name 'GENERATORS:GASOLINE'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'HEATING:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'COOLING:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'INTERIOR LIGHTING:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'EXTERIOR LIGHTING:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'FANS:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'PUMPS:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'HEAT REJECTION:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'HUMIDIFICATION:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'HEAT RECOVERY:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'WATER SYSTEMS:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'REFRIGERATION:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL1' invalid Variable or Meter Name 'GENERATORS:OTHERFUEL1'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'HEATING:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'COOLING:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'INTERIOR LIGHTING:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'EXTERIOR LIGHTING:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'INTERIOR EQUIPMENT:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'EXTERIOR EQUIPMENT:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'FANS:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'PUMPS:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'HEAT REJECTION:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'HUMIDIFICATION:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'HEAT RECOVERY:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'WATER SYSTEMS:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'REFRIGERATION:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - OTHERFUEL2' invalid Variable or Meter Name 'GENERATORS:OTHERFUEL2'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'HEATREJECTION:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'HUMIDIFIER:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'HEATRECOVERY:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'COGENERATION:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY' invalid Variable or Meter Name 'REFRIGERATION:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS' invalid Variable or Meter Name 'INTERIOREQUIPMENT:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS' invalid Variable or Meter Name 'COOLING:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS' invalid Variable or Meter Name 'WATERSYSTEMS:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS' invalid Variable or Meter Name 'COGENERATION:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'INTERIORLIGHTS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'EXTERIORLIGHTS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'INTERIOREQUIPMENT:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'FANS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'PUMPS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'HEATING:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'COOLING:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'HEATREJECTION:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'HUMIDIFIER:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'HEATRECOVERY:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'WATERSYSTEMS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING' invalid Variable or Meter Name 'COGENERATION:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'INTERIORLIGHTS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'EXTERIORLIGHTS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'INTERIOREQUIPMENT:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'FANS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'PUMPS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'HEATING:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'COOLING:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'HEATREJECTION:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'HUMIDIFIER:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'HEATRECOVERY:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'WATERSYSTEMS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING' invalid Variable or Meter Name 'COGENERATION:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND' invalid Variable or Meter Name 'HEATREJECTION:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND' invalid Variable or Meter Name 'HUMIDIFIER:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND' invalid Variable or Meter Name 'HEATRECOVERY:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND' invalid Variable or Meter Name 'COGENERATION:ELECTRICITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND' invalid Variable or Meter Name 'INTERIOREQUIPMENT:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND' invalid Variable or Meter Name 'COOLING:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND' invalid Variable or Meter Name 'WATERSYSTEMS:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND' invalid Variable or Meter Name 'COGENERATION:NATURALGAS'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'DISTRICTHEATING:FACILITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'INTERIORLIGHTS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'EXTERIORLIGHTS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'INTERIOREQUIPMENT:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'FANS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'PUMPS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'HEATING:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'COOLING:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'HEATREJECTION:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'HUMIDIFIER:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'HEATRECOVERY:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'WATERSYSTEMS:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND' invalid Variable or Meter Name 'COGENERATION:DISTRICTHEATING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'DISTRICTCOOLING:FACILITY'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'INTERIORLIGHTS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'EXTERIORLIGHTS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'INTERIOREQUIPMENT:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'EXTERIOREQUIPMENT:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'FANS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'PUMPS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'HEATING:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'COOLING:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'HEATREJECTION:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'HUMIDIFIER:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'HEATRECOVERY:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'WATERSYSTEMS:DISTRICTCOOLING'
+   ** Warning ** In Output:Table:Monthly 'BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND' invalid Variable or Meter Name 'COGENERATION:DISTRICTCOOLING'
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=HEATING:FUELOILNO1 not valid for this simulation.
+   **   ~~~   ** ..Variables not valid for this simulation will have "[Invalid/Undefined]" in the Units Column of the Table Report.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=COOLING:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=FANS:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=PUMPS:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=HEAT REJECTION:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=REFRIGERATION:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO1
+   **   ~~~   ** ..Variable name=GENERATORS:FUELOILNO1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=HEATING:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=COOLING:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=FANS:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=PUMPS:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=HEAT REJECTION:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=REFRIGERATION:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - FUELOILNO2
+   **   ~~~   ** ..Variable name=GENERATORS:FUELOILNO2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=HEATING:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=COOLING:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=FANS:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=PUMPS:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=HEAT REJECTION:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=REFRIGERATION:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - PROPANEGAS
+   **   ~~~   ** ..Variable name=GENERATORS:PROPANEGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=HEATING:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=COOLING:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=FANS:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=PUMPS:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=HEAT REJECTION:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=REFRIGERATION:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - COAL
+   **   ~~~   ** ..Variable name=GENERATORS:COAL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=HEATING:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=COOLING:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=FANS:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=PUMPS:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=HEAT REJECTION:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=REFRIGERATION:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DIESEL
+   **   ~~~   ** ..Variable name=GENERATORS:DIESEL not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=HEATING:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=COOLING:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=FANS:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=PUMPS:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=HEAT REJECTION:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=REFRIGERATION:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - GASOLINE
+   **   ~~~   ** ..Variable name=GENERATORS:GASOLINE not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=HEATING:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=COOLING:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=FANS:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=PUMPS:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=HEAT REJECTION:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=REFRIGERATION:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL1
+   **   ~~~   ** ..Variable name=GENERATORS:OTHERFUEL1 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=HEATING:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=COOLING:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=INTERIOR LIGHTING:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=EXTERIOR LIGHTING:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=INTERIOR EQUIPMENT:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=EXTERIOR EQUIPMENT:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=FANS:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=PUMPS:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=HEAT REJECTION:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=HUMIDIFICATION:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=HEAT RECOVERY:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=WATER SYSTEMS:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=REFRIGERATION:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - OTHERFUEL2
+   **   ~~~   ** ..Variable name=GENERATORS:OTHERFUEL2 not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HEATREJECTION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=COGENERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=REFRIGERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HEATREJECTION:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HEATREJECTION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=COGENERATION:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COGENERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY
+   **   ~~~   ** ..Variable name=REFRIGERATION:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:REFRIGERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=COOLING:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=COGENERATION:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=COOLING:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COOLING:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS
+   **   ~~~   ** ..Variable name=COGENERATION:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COGENERATION:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=INTERIORLIGHTS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=EXTERIORLIGHTS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=FANS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=PUMPS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=HEATING:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=COOLING:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=HEATREJECTION:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=HUMIDIFIER:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=HEATRECOVERY:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING
+   **   ~~~   ** ..Variable name=COGENERATION:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=INTERIORLIGHTS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=EXTERIORLIGHTS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=FANS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=PUMPS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=HEATING:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=COOLING:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=HEATREJECTION:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=HUMIDIFIER:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=HEATRECOVERY:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING
+   **   ~~~   ** ..Variable name=COGENERATION:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATREJECTION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:EXTERIOREQUIPMENT:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATREJECTION:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HEATREJECTION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HUMIDIFIER:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:HEATRECOVERY:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - ELECTRICITY PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:ELECTRICITY not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COGENERATION:ELECTRICITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=COOLING:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:INTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:EXTERIOREQUIPMENT:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=COOLING:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COOLING:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:WATERSYSTEMS:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - NATURAL GAS PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:NATURALGAS not valid for this simulation.
+   **   ~~~   ** ..i.e., Variable name=Meter:COGENERATION:NATURALGAS not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=DISTRICTHEATING:FACILITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIORLIGHTS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIORLIGHTS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=FANS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=PUMPS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATING:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=COOLING:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATREJECTION:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HUMIDIFIER:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATRECOVERY:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT HEATING PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:DISTRICTHEATING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=DISTRICTCOOLING:FACILITY not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIORLIGHTS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIORLIGHTS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=INTERIOREQUIPMENT:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=EXTERIOREQUIPMENT:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=FANS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=PUMPS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATING:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=COOLING:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATREJECTION:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HUMIDIFIER:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=HEATRECOVERY:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=WATERSYSTEMS:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** Processing Monthly Tabular Reports: BUILDING ENERGY PERFORMANCE - DISTRICT COOLING PEAK DEMAND
+   **   ~~~   ** ..Variable name=COGENERATION:DISTRICTCOOLING not valid for this simulation.
+   ** Warning ** CalcEquipmentFlowRates: Target water temperature is greater than the hot water temperature
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=01/02 07:00 - 08:00
+   **   ~~~   ** ...target water temperature       = 60.000 C
+   **   ~~~   ** ...hot water temperature       = 58.974 C
+   **   ~~~   ** ...Note: target water temperature should be less than or equal to the hot water temperature
+   **   ~~~   ** ...Target water temperature should be less than or equal to the hot water temperature. Verify temperature setpoints and schedules.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-ELECTRICITY" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-DISTILLATE OIL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-RESIDUAL OIL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-NATURAL GAS" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-COAL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ************* Simulation Error Summary *************
+   ************* There are 7 unused schedules in input.
+   ************* There are 7 unused week schedules in input.
+   ************* There are 18 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** MAIN SERVICE WATER USE 0.06GPM AT 140F" - Target water temperature should be less than or equal to the hot water temperature error continues...
+   *************  **   ~~~   **   This error occurred 227011 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=59.790045  Min=14.913959
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 31 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 227458 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 14.04sec

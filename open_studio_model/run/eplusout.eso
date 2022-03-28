@@ -1,0 +1,57 @@
+Program Version,EnergyPlus, Version 9.6.0-4b123cf80f, YMD=2022.03.25 14:09
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,8,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,5,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Calendar Year of Simulation[] ! When Annual Report Variables Requested
+7,9,Environment,Site Outdoor Air Drybulb Temperature [C] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+End of Data Dictionary
+1,RED BLUFF MUNICIPAL ARPT ANN CLG .4% CONDNS DB=>MWB,  40.15,-122.25,  -8.00, 106.00
+4,1, 7
+7,31.537374999999997,23.700000000000003,21, 5,60,40.6,21,14,60
+1,RED BLUFF MUNICIPAL ARPT ANN CLG .4% CONDNS DP=>MDB,  40.15,-122.25,  -8.00, 106.00
+4,1, 7
+7,18.637374999999995,10.8,21, 5,60,27.7,21,14,60
+1,RED BLUFF MUNICIPAL ARPT ANN CLG .4% CONDNS ENTH=>MDB,  40.15,-122.25,  -8.00, 106.00
+4,1, 7
+7,26.837374999999998,19.0,21, 5,60,35.9,21,14,60
+1,RED BLUFF MUNICIPAL ARPT ANN CLG .4% CONDNS WB=>MDB,  40.15,-122.25,  -8.00, 106.00
+4,1, 7
+7,26.637374999999995,18.800000000000004,21, 5,60,35.7,21,14,60
+1,RED BLUFF MUNICIPAL ARPT ANN HTG 99.6% CONDNS DB,  40.15,-122.25,  -8.00, 106.00
+4,1,12
+7,-1.1000000000000003,-1.1,21, 1,60,-1.1,21, 1,60
+1,RED BLUFF MUNICIPAL ARPT ANN HTG WIND 99.6% CONDNS WS=>MCDB,  40.15,-122.25,  -8.00, 106.00
+4,1,12
+7,11.300000000000004,11.3,21, 1,60,11.3,21, 1,60
+1,RED BLUFF MUNICIPAL ARPT ANN HUM_N 99.6% CONDNS DP=>MCDB,  40.15,-122.25,  -8.00, 106.00
+4,1,12
+7,10.800000000000004,10.8,21, 1,60,10.8,21, 1,60
+1,RUN PERIOD 1,  40.15,-122.25,  -8.00, 106.00
+4,31, 1
+7,7.19301075268816,-1.1,13, 2,60,21.1,31,14,60
+4,59, 2
+7,8.44449404761906,-1.1, 1, 6,60,20.0,26,16,60
+4,90, 3
+7,9.671370967741941,0.6,11, 5,60,23.3,15,16,60
+4,120, 4
+7,13.80666666666667,2.8,14, 4,60,26.1,15,15,60
+4,151, 5
+7,20.06626344086023,7.2, 9, 5,60,36.1,30,14,60
+4,181, 6
+7,25.609166666666656,12.2, 9, 5,60,38.3,15,15,60
+4,212, 7
+7,28.414784946236527,14.4, 8, 5,60,45.0,10,16,60
+4,243, 8
+7,25.99059139784947,13.3,24, 6,60,40.0, 1,16,60
+4,273, 9
+7,24.541944444444425,11.7,16, 6,60,42.2,24,15,60
+4,304,10
+7,17.071908602150568,4.4,30, 7,60,32.2,12,16,60
+4,334,11
+7,11.61138888888891,0.6,30, 6,60,25.6,17,14,60
+4,365,12
+7,8.526209677419368,-1.7, 4, 2,60,20.6,16,15,60
+End of Data
+ Number of Records Written=          19
