@@ -1,0 +1,14 @@
+Program Version,EnergyPlus, Version 9.6.0-4b123cf80f, YMD=2022.03.07 17:48,
+   ** Severe  ** <root>[AirTerminal:SingleDuct:ConstantVolume:NoReheat][Kitchen_Flr_5 CAV Box] - Missing required property 'air_inlet_node_name'.
+   ** Severe  ** <root>[AirTerminal:SingleDuct:ConstantVolume:NoReheat][Kitchen_Flr_5 CAV Box] - Missing required property 'air_outlet_node_name'.
+   ** Severe  ** <root>[BuildingSurface:Detailed][Basement_Wall_East] - Missing required property 'construction_name'.
+   ** Severe  ** <root>[ZoneHVAC:AirDistributionUnit][ADU Kitchen_Flr_5 CAV Box] - Missing required property 'air_distribution_unit_outlet_node_name'.
+   **  Fatal  ** Errors occurred on processing input file. Preceding condition(s) cause termination.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=4
+   ..... Last severe error=<root>[ZoneHVAC:AirDistributionUnit][ADU Kitchen_Flr_5 CAV Box] - Missing required property 'air_distribution_unit_outlet_node_name'.
+   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
+   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 4 Severe Errors; Elapsed Time=00hr 00min  0.36sec

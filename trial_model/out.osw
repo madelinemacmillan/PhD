@@ -1,0 +1,78 @@
+{
+   "completed_at" : "20220308T004807Z",
+   "completed_status" : "Fail",
+   "created_at" : "20220308T003459Z",
+   "current_step" : 1,
+   "eplusout_err" : "Program Version,EnergyPlus, Version 9.6.0-4b123cf80f, YMD=2022.03.07 17:48,\n   ** Severe  ** <root>[AirTerminal:SingleDuct:ConstantVolume:NoReheat][Kitchen_Flr_5 CAV Box] - Missing required property 'air_inlet_node_name'.\n   ** Severe  ** <root>[AirTerminal:SingleDuct:ConstantVolume:NoReheat][Kitchen_Flr_5 CAV Box] - Missing required property 'air_outlet_node_name'.\n   ** Severe  ** <root>[BuildingSurface:Detailed][Basement_Wall_East] - Missing required property 'construction_name'.\n   ** Severe  ** <root>[ZoneHVAC:AirDistributionUnit][ADU Kitchen_Flr_5 CAV Box] - Missing required property 'air_distribution_unit_outlet_node_name'.\n   **  Fatal  ** Errors occurred on processing input file. Preceding condition(s) cause termination.\n   ...Summary of Errors that led to program termination:\n   ..... Reference severe error count=4\n   ..... Last severe error=<root>[ZoneHVAC:AirDistributionUnit][ADU Kitchen_Flr_5 CAV Box] - Missing required property 'air_distribution_unit_outlet_node_name'.\n   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).\n   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.\n   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 4 Severe Errors; Elapsed Time=00hr 00min  0.36sec\n",
+   "file_paths" : 
+   [
+      "C:/Users/madel/AppData/Local/Temp/osmodel-1646699699-1/resources/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "ADF520B8",
+   "seed_file" : "../trial_model.osm",
+   "started_at" : "20220308T004737Z",
+   "steps" : 
+   [
+      {
+         "arguments" : {},
+         "description" : "Often the eplusout.err file may request output diagnostics. This measure can be used to add this to the IDF file. Re-run your project to see the requested output.",
+         "measure_dir_name" : "AddOutputDiagnostics",
+         "modeler_description" : "Makes Output:Diagnostics object with choice list for optional values:, DisplayAllWarnings, DisplayExtraWarnings, DisplayUnusedSchedules, DisplayUnusedObjects, DisplayAdvancedReportVariables, DisplayZoneAirHeatBalanceOffBalance, DoNotMirrorDetachedShading, DisplayWeatherMissingDataWarnings, ReportDuringWarmup, ReportDetailedWarmupConvergence.",
+         "name" : "Add Output Diagnostics",
+         "result" : 
+         {
+            "completed_at" : "20220308T004739Z",
+            "measure_class_name" : "AddOutputDiagnostics",
+            "measure_display_name" : "Add Output Diagnostics",
+            "measure_name" : "add_output_diagnostics",
+            "measure_taxonomy" : "Reporting.QAQC",
+            "measure_type" : "EnergyPlusMeasure",
+            "measure_uid" : "cb957503-4a01-42c4-a918-a44df4ea759c",
+            "measure_version_id" : "507953df-6092-4146-aca6-9b038ca02cb3",
+            "measure_version_modified" : "20210406T220254Z",
+            "measure_xml_checksum" : "AA6ADD14",
+            "started_at" : "20220308T004739Z",
+            "stderr" : "",
+            "stdout" : "",
+            "step_errors" : [],
+            "step_files" : [],
+            "step_final_condition" : "The model finished with 1 Output:Diagnostic objects.",
+            "step_info" : 
+            [
+               "An output diagnostic object with a value of DisplayExtraWarnings has been added to your model."
+            ],
+            "step_initial_condition" : "The model started with 0 Output:Diagnostic objects.",
+            "step_result" : "Success",
+            "step_values" : 
+            [
+               {
+                  "name" : "outputDiagnostic",
+                  "value" : "DisplayExtraWarnings"
+               }
+            ],
+            "step_warnings" : []
+         }
+      },
+      {
+         "arguments" : {},
+         "description" : "This measure creates high level tables and charts pulling both from model inputs and EnergyPlus results. It has building level information as well as detail on space types, thermal zones, HVAC systems, envelope characteristics, and economics. Click the heading above a chart to view a table of the chart data.",
+         "measure_dir_name" : "OpenStudioResults",
+         "modeler_description" : "For the most part consumption data comes from the tabular EnergyPlus results, however there are a few requests added for time series results. Space type and loop details come from the OpenStudio model. The code for this is modular, making it easy to use as a template for your own custom reports. The structure of the report uses bootstrap, and the graphs use dimple js. The new measure warning section will show warnings generated by upstream measures. It will not show forward translation warnings, EnergyPlus warnings, or warnings that might be reported by this measure.",
+         "name" : "OpenStudio Results"
+      },
+      {
+         "arguments" : {},
+         "description" : "This script exports a CSV file containing values for each schedule in the model at a specified interval.",
+         "measure_dir_name" : "ExportScheduleCSV",
+         "modeler_description" : "Only schedules of type ScheduleDay are exported.",
+         "name" : "ExportScheduleCSV"
+      }
+   ],
+   "updated_at" : "20220308T004808Z",
+   "weather_file" : "USA_CA_Red.Bluff.Muni.AP.725910_TMY.epw"
+}
