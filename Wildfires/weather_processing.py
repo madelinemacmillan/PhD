@@ -8,41 +8,31 @@ Created on Sat Nov 28 12:55:46 2020
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("weather.csv")
+ozone = pd.read_csv("ozone.csv")
+co=pd.read_csv("co.csv")
+load=pd.read_csv("load.csv")
 
-split = df["DATE"].str.split("-", expand=True)
+load=load.drop(columns=['Unnamed: 0','TAC_AREA_NAME'])
 
-df["YEAR"] = split[0]
-#df["YEAR"] = "20" + df["YEAR"]
-df
+##Adjust hours to be the same
 
-df["MONTH"] = split[1]
+co[['Hour','Trash']] = co['Time_Local'].str.split(':',expand=True)
+co=co.drop(columns=['Time_Local','Trash','State_Name','County_Name','Unnamed: 0'])
+co['Hour'] = co['Hour'].astype('int64')
+co.Hour = co.Hour.mask( co.Hour >= 0, co.Hour + 1)
 
-df["DAY"] = split[2]
+ozone[['Hour','Trash']] = ozone['Time_Local'].str.split(':',expand=True)
+ozone=ozone.drop(columns=['Time_Local','Trash','State_Name','County_Name','Unnamed: 0'])
+ozone['Hour'] = ozone['Hour'].astype('int64')
+ozone.Hour = ozone.Hour.mask( ozone.Hour >= 0, ozone.Hour + 1)
 
-daily_size = df["YEAR"].size
+##drop locations that won't be used (keep the location with the most data)
 
-df = df.loc[df.index.repeat(24)]
-#
-#hours = np.arange(24) + 1
-#
-#h = np.tile(hours, daily_size)
-#
-#df["HOUR"] = h
-#
-#delimiter = "_"
-#
-#
-#df["Date-Time"] = df["YEAR"].astype(str) + delimiter + df["MONTH"].astype(str) + delimiter + df["DAY"].astype(str) + delimiter + df["HOUR"].astype(str)
-#
-#df = df.drop(["DATE", "YEAR", "MONTH", "DAY", "HOUR"], axis=1)
-##
-#df = df.set_index("Date-Time")
-#
-#df.to_csv("weather_data2.csv")
-#weather2=weather
-#frames = [df,weather2]
-#
-#weather_new = pd.concat(frames)
-#
-#print(df.head())
+
+#Join files based on date and hour
+co['combined']=co['Date_Local'].astype(str)+'-'+co['Hour'].astype(str)
+ozone['combined']=ozone['Date_Local'].astype(str)+'-'+ozone['Hour'].astype(str)
+load['combined']=load['OPR_DT'].astype(str)+'-'+load['OPR_HR'].astype(str)
+
+air = pd.merge(co, ozone, on="combined")
+data = pd.merge(air, load, on="combined")
