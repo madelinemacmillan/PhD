@@ -1,5 +1,7 @@
 using CSV
 using DataFrames
+using DelimitedFiles
+
 
 function get_quantile(data,quantile)
     ##compuates the quantile of the dataset, both of which are inputs
@@ -33,40 +35,122 @@ function get_quantile(data,quantile)
     end
 end
 
-test_data=DataFrame(CSV.File("test_data.csv"))
-test_data=convert(Matrix{Float64}, test_data)
+function real_peel(prim,box,name)
+    #performs a peel operation on a real-valued column
+    x=prim.x[box.yi][name]
+    peels=[]
+    for direction in ["upper","lower"]
+        if isnan(x)
+           return []
+        else
+            peel_alpha=prim.peel_alpha
+            index=0
 
-function Prim(prim,box,name)
-    PEEL_OPERATIONS = {"object" => categorical_peel,
-    "bool" => categorical_peel,
-    "int8" => discrete_peel,
-    "int16" => discrete_peel,
-    "int32" => discrete_peel,
-    "int64" => discrete_peel,
-    "uint8" => discrete_peel,
-    "uint16" => discrete_peel,
-    "uint32" => discrete_peel,
-    "uint64" => discrete_peel,
-    "float16" => real_peel,
-    "float32" => real_peel,
-    "float64" => real_peel}
+            if direction == "upper"
+                peel_alpha=1-peel_alpha
+                index=1
 
-PASTE_OPERATIONS = {"object" => categorical_paste,
-     "bool" => categorical_paste,
-     "int8" => discrete_peel,
-     "int16" => real_paste,
-     "int32" => real_paste,
-     "int64" => real_paste,
-     "uint8" => discrete_peel,
-     "uint16" => real_paste,
-     "uint32" => real_paste,
-     "uint64" => real_paste,
-     "float16" => real_paste,
-     "float32" => real_paste,
-     "float64" => real_paste}
-     
-     #dictionaries to determine which method to use dependent on the dtype
+            box_peel = get_quantile(x,peel_alpha)
+
+            end
+
+            if direction == "lower"
+                logical = x >= box_peel
+                indices=box.yi[logical]
+
+            elseif direction == "upper"
+                logical = x <= box_peel
+                indices = box.yi[logical]
+        
+            temp_box=copy(deepcopy(box._box_lims[-1]))
+            temp_box[name][index] = box_peel
+            append!(box_peel,(indices,temp_box)) ##Currently appending the () as a part of the array, not as a distinct tuple element within the array
+
+            else
+                return []
+
+            end
 
 
-answer=get_quantile(test_data,.25)
-print(answer)
+        return peels
+
+        end
+    end
+end
+
+function real_paste(prim, box, name)
+    #performs paste operation on a real-valued column
+    #pastes to upper and lower dimension of given column
+    #returns two new candidate boxes
+
+    x = prim.x[prim.yi_remaining]
+    limits=box._box_lims[-1]        #defined in PRIM_box
+    init_limits = prim._box_init   #this is defined in PRIM_alg
+
+    pastes=[]
+
+    for direction in ["lower","upper"]
+        box_paste = copy(limits)
+        paste_box=copy(limits)
+
+        if direction == "upper"
+            paste_box[name][0]=paste_box[name][1]
+            paste_box[name][1]=init_limts[name][1]
+
+            indices=in_box(x,paste_box)  #defined in scenario discovery
+
+            data=x[indices][name]
+
+            if data.shape[0] > 0
+                paste_value = get_quantile(data, prim.paste_alpha)
+                
+            else
+                paste_value=init_limits[name][1]
+
+            end
+            @assert(paste_value >= limits[name][1])
+
+        elseif direction == "lower"
+            paste_box[name][0] = init_limits[name][0]
+            paste_box[name][1] = box_paste[name][0]
+            
+            indices = in_box(x, paste_box)  #defined in scenario discovery
+            data = x[indices][name]
+
+            if data.shape[0] > 0
+                paste_value = get_quantile(data, 1-prim.paste_alpha)
+            else
+                paste_value = init_limits[name][0]
+            
+            end
+
+            @assert(paste_value <= limits[name][0])
+
+        dtype=dump(box_paste[name][0])
+        end
+        if dtype == Int32
+            paste_value=trunc(paste_value)
+
+        end
+
+        if direction == "upper"
+            box_paste[name][1]=paste_value
+        else
+            box_paste[name][0]=paste_value
+        end
+
+        indices=in_box(x,box_paste)      #defined in scenario discovery
+        indices=prim.yi_remaining[indices]
+
+        push!(pastes,(indices,box_paste))
+    end
+    return pastes
+end
+
+#test_data=DataFrame(CSV.File("test_data.csv"))
+#test_data=Matrix(test_data)
+#typeof(test_data)
+
+
+#answer=get_quantile(test_data,q)
+#print(answer)

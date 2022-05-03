@@ -10,7 +10,13 @@ class Person:
     self.age = age
 
   def myfunc(self):
-    print("Hello my name is " + self.name)
+    object_age=self.age[3]
+    object_age=str(object_age)
+    print("Hello my name is " + self.name+" and I am "+ object_age)
 
-p1 = Person("John", 36)
+p1 = Person("John", [34,35,36,37])
 p1.myfunc()
+
+peels=[0.25]
+peels.append((4,3))
+print(peels)
