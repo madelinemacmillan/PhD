@@ -24,7 +24,6 @@ function honk(car::SportsCar)
     println("sporty honk")
     c="blue"
     car.color=c
-    car.wheels=4
 end
 
 function honk(car::BaseCar)

@@ -148,12 +148,29 @@ function initialize(prim)
     prim.threshold_type = threshold_type
     prim.obj_func = obj_func
 
-    prim.yi=Array(0:size(y)[1])
-    prim.n 
+    prim.yi = Array(0:size(y)[1])
+    prim.n = size(prim.y)[1]
+    prim.t_coi = prim.determine_coi(self.yi)    ###determine_coi defined later
+    prim._box_init = make_box(prim.x)       ###make box defined later
+    prim._boxes = []
+    prim._update_yi_remaining()     ###update yi remaining defined later
 
     prim(:prim_x=>x,:prim_y=>y,:prim_paste_alpha=>paste_alpha,:prim_peel_alpha=>peel_alpha,:prim_mass_min=>mass_min,
     :prim_threshold=>prim.threshold,:prim_threshold_type=>prim.threshold_type,:prim_obj_func=prim.obj_func,:prim_yi=>prim.yi)
     return prim
+
+#function stats(prim)
+
+function limits(prim)
+    for box in prim._boxes
+        box_lims=[prim.box._box_lims[prim.box._cur_box]]
+    end
+    if @isdefined(prim.box_lims)==false
+        box_lims = [prim._box_init]
+    else 
+        if 
+        compared=compare(box_lims[-1],prim._box_init)
+
 
         
 
