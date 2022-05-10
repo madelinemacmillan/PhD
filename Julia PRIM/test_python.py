@@ -110,7 +110,7 @@ dev_2=Developer('Jane','Smith',90000,'Java')
 man_1=Manager('Caitlin','Murphy',50000, [dev_1,dev_2,emp_1])
 
 print(isinstance(man_1,Manager))
-print(issubclass(man_1,Manager))
+print(issubclass(Manager,Employee))
 
 print(man_1.__dict__)
 print(dev_1.pay)
