@@ -12,12 +12,12 @@ mutable struct prim <: prim_
     peel_alpha::Float64 = 0.05
     paste_alpha::Float64 = 0.05
     mass_min::Float64 = 0.05
-    include::Array 
+    include::Array
     exclude::Array
     coi #needs to be String or Array
 end
 
-function initialize(prim)
+function initialize(prim::prim)
     if prim.x isa DataFrame
         x = Matrix(prim.x)
     elseif prim.x isa maskedarray
@@ -135,16 +135,16 @@ function initialize(prim)
     if length(unique_y) >2
         error("y must contain only two values-- 0/1 or False/True")
     end
-    
+
     #omitted error in lines 210-217
     prim=Dict()
-    
+
     prim.x=x
     prim.y=y
     prim.paste_alpha = paste_alpha
     prim.peel_alpha = peel_alpha
     prim.mass_min = mass_min
-    prim.threshold = threshold 
+    prim.threshold = threshold
     prim.threshold_type = threshold_type
     prim.obj_func = obj_func
 
@@ -161,16 +161,24 @@ function initialize(prim)
 
 #function stats(prim)
 
-function limits(prim)
+function limits(prim_object::prim)
     for box in prim._boxes
         box_lims=[prim.box._box_lims[prim.box._cur_box]]
     end
     if @isdefined(prim.box_lims)==false
         box_lims = [prim._box_init]
-    else 
-        if 
-        compared=compare(box_lims[-1],prim._box_init)
+    else not compare(box_lims[-1],prim._box_init) #index -1?
+        push!(box_lims, prim._box_init)
 
+    nr_boxes = length(box_lims)
+    box_limts, uncs = get_sorted_box_lims(box_lims,make_box(prim.x))
 
-        
+    dtype = Float64
+    ###NICK line 287
+    for value in fieldnames(typeof(box_lims[1]))
+        if value[1] == object ##NICK LINE 289
+            dtype == object
+            break
 
+    columns = [(index,y) for i in index for l in ["min","max"]] #nick
+    df_boxes = DataFrames(zeros(length(uncs),nr_boxes*2),index=uncs,dtype=dtype,columns=columns)
