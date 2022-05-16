@@ -1,0 +1,5 @@
+PRIM Julia
+
+In its current form, the algorithm will work best with discrete values in CSV form.
+
+Future versions will include capabilities to consider JSON and other data formats. 

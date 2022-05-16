@@ -105,6 +105,7 @@ function peeling_iteration(data,in_1,in_2,out,alpha,beta)            #in_1 and i
         else
         end
     end
+    println(box_mean)
     return new_box,box_mean,box_beta,old_box
 end
 
@@ -219,6 +220,7 @@ function pasting_iteration(org_data,starting_box_data,in_1,in_2,out,alpha,beta) 
             x += 1   
         end     
     end
+    println(box_mean)
     return new_box,box_mean,box_beta,old_box
 end
 
@@ -242,8 +244,8 @@ function prim_iteration(data, in_1, in_2, out, alpha, beta)
                 
                 println(x)
                 x += 1
-                #println(new_box_peel)
-                #println(new_box_paste)
+                println(size(new_box_peel)[1])
+                println(size(new_box_paste)[1])
                 
             else
                 new_box_peel,box_mean,box_beta,old = peeling_iteration(new_box_paste, in_1, in_2, out, alpha, beta)
@@ -261,7 +263,7 @@ function prim_iteration(data, in_1, in_2, out, alpha, beta)
     return final_box
 end
 
-prim_out=prim_iteration(data,1,8,9,0.08,0.08)
+prim_out=prim_iteration(data,1,8,9,0.079,0.08);
 
 #prim_peel,box_mean,box_beta,old_box=peeling_iteration(data,1,8,9,0.08,0.08);
 #prim_paste,box_mean,box_beta,old=pasting_iteration(data,prim_peel,1,8,9,0.08,0.08);
