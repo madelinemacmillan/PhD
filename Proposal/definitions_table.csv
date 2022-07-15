@@ -1,0 +1,48 @@
+﻿Discipline,Year,Definition
+General/other resilience,1973,“a measure of the persistence of systems and of their ability to absorb change and disturbance and still maintain the same relationships between populations or state variables” [17]
+,2006,"“the capacity of the system to absorb disturbance and re-organize while undergoing change so as to still retain essentially the same function, structure, identity, and feedbacks” [99], [100]"
+,2008,"the ability “to adjust its functioning prior to, during, or following changes and disturbances, so that it can continue to perform as required after a disruption or a major mishap, and in the presence of continuous stresses” [101]"
+,2011,"“the capacity to absorb shocks while maintaining system functions” and “the capacity for renewal, re-organization and development, should the system collapse” [102]"
+,2012,“the ability to absorb shocks and still retain function” [19]
+,2013,“the ability to withstand [a] disruption and operate smoothly in a volatile environment” [103]
+,2013,"“the ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions, resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents” [104]"
+,2014,“the direct strength of structures or institutions when placed under pressure” and the “ability of systems to absorb and recover from the impact of disruptive events without fundamental changes in function or structure” [105]
+,2014,"“the capacity of social, economic and environmental systems to cope with a hazardous event or trend or disturbance, responding or reorganizing in ways that maintain their essential function, identity and structure, while also maintaining the capacity for adaptation, learning, and transformation” [106]"
+,2015,"“the rebound from trauma and return to equilibrium, synonym for robustness, opposite of brittleness, network architectures that can sustain the ability to adapt to future surprises as conditions evolve” [25]"
+,2015,"“the ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions… [including] deliberate attacks, accidents, or naturally occurring threats or incidents” [107]"
+,2016,"“the ability of an urban system-and all its constituent socio-ecological and socio-technical networks across temporal and spatial scales-to maintain or rapidly return to desired functions in the face of a disturbance, to adapt to change, and to quickly transform systems that limit current or future adaptive capacity” [108]"
+,2016,"“withstand and recover quickly from extreme external events such as natural disasters, maintain system operations during an extreme external disruption, return the system to normal operation following a disruption” [109]"
+,2017,“the capability of a system to withstand internal/external stresses and recover from them” [110]
+,2018,“the ability of the system to meet as much of its intended functionalities as possible when interrupted by either external or internal disruptions” [111]
+,2019,"“the ability to anticipate, prepare for, and adapt to changing conditions and withstand, respond to, and recover rapidly from disruptions through adaptable and holistic planning and technical solutions” [112]"
+,2019,“the ability of a system to withstand or quickly return to normal condition after the occurrence of an event that disrupts its state” [78]
+,2020,“the ability of an individual or a system to adapt to and recover from external shocks or stresses” [20]
+,2020,"“the ability to prepare for an adapt to changing conditions and withstand and recover rapidly from disruptions, including the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents” [113]"
+,2020,"“the capability to anticipate, prepare for, respond to, and recover from significant multi-hazard threats with minimum damage to social well-being, health, and the environment” [114]"
+,2020,"“the ability of a system to predict a rare disastrous event, withstand or absorb it, to adapt to its consequences, and quickly recover its performance to an acceptable level after facing such an event” [115]"
+Critical infrastructure and system resilience,2009,“the ability of systems to withstand a major disruption within acceptable degradation parameters and to recover with a suitable time and reasonable costs and risks” [116]
+,2011,"“given the occurrence of a particular disruptive event, the resilience of a system to that event is the ability to reduce efficiently both the magnitude and duration of the deviation from targeted system performance levels” [117]"
+,2011,"“trusted and effective out of the box in a wide range of contexts, easily adapted to many others through reconfiguration or replacement, with graceful and detectable degradation of function” [118], [119]"
+,2012,“the ability for a transportation network to absorb disruptive events gracefully and return itself to a level of service equal to or greater than the predisruption level of service within a reasonable time frame” [22]
+,2013,"“the ability to resist to internal drift and cascading failures, and recover back to the initial operation state” [85]"
+,2014,An energy system that “can source alternative modes of production or consumption in response to sudden and transient shocks…the ability of the system to tolerate and absorb change” [120]
+,2015,"“the ability of a power system to withstand extraordinary and high impact-low probability events such as due to extreme weather, rapidly recover from such disruptive events, and absorb lessons for adapting its operation and structure to prevent or mitigate the impact of similar events in the future” [27]"
+,2016,"“the ability of a power system to withstand the initial shock, rapidly recover from the disruptive event, and apply adaptation measures for mitigating the impact of similar events in the future” [86]"
+,2016,"a “system’s ability to maintain continuous electricity flow to customers given a certain load prioritization scheme, [respond] to cyber-physical disturbances in real-time or semi real-time, avoiding interruptions of critical services, [alter] its structure, loads and resources in an agile way” [121]"
+,2017,"“the absence of, protection from, or adaptability to threats that are caused by or have impact on the [system]” [122]"
+,2018,"the “ability [of the system] to withstand extraordinary and high-impact, low-probability events that may have never been experienced before, rapidly recover from such disruptive events, and adapt its operation and structure to prevent or mitigate the impact of similar events in the future” [123]"
+,2018,"“preventing power disruption and restoring electricity supply as quickly as possible when an outage does occur, while mitigating the consequences of the outage” [34]"
+,2020,"“[the ability] to ensure…systems are able to withstand extreme weather events resulting from climate change, terrorism, cyber-attacks and again infrastructure” [124]"
+,2020,"the infrastructure’s behavior and level of service during a disruptive event and subsequent recovery process measured in terms of robustness, redundancy, adaptability, reliability, rapidity, and resourcefulness [23]"
+,2020,“a power system [that] can recover itself using minimum human interventions as quickly as possible” [115]
+,2020,“the probability of a systems functionality state sustaining a high state or restoring to a high state from a low state during and after the occurrence of disruptions in the operation of a system within a specific time” [125]
+Disaster resilience,2006,"“the ability of a region to anticipate, prepare for, respond to and recover from a disturbance” [126]"
+,2015,"“the ability of a system, community or society to resist, mitigate, respond and recover from the effects of a hazard/shock in an efficient way and timely manner” [127]"
+,2019,"“functionality prior to, before, and after a natural hazard event, as well as the time it takes to recover functionality” [128]"
+Community resilience,2018,"“the ability of a socio-ecological system to survive the disturbances, reorganize into a desirable functional system, and anticipate trajectories and strengthen adaptive capacity to floods” [129]"
+,2020,“the ability to absorb/resist/withstand disturbance and the ability to respond/recover/restore the acceptable level of functioning and structure” [20]
+Psychological and healthcare resilience,2003,“the personal qualities that enable one to thrive in the face of adversity” [31]
+,2003,“patterns of positive adaptation in the context of significant risk or adversity” [130]
+,2016,"“mindfully disengaging from aversive traumatic events to replenish depleted resources such as arrest and social support, and limit exposure to further trauma” [131]"
+,2018,“the ability to sustain everyday operations under anticipated and unanticipated conditions” [132]
+,2020,"“surviving, thriving, [persevering] reconciling and integrating traumatic experiences into healthy identity development, and advocating for self [following adversity]” [133]"
