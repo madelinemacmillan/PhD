@@ -2,12 +2,35 @@ using CSV
 using DataFrames
 using Statistics
 
-#example looking at pregnancies and age
 
-data=DataFrame(CSV.File("test_data.csv"))
-paste_data=DataFrame(CSV.File("test_paste.csv"))
-#test_data_matrix=Matrix(test_data)
-#typeof(test_data)
+#example looking at pregnancies and age
+function read(file)
+    json_data=DataFrame()
+    extension=split(file, ".")[2]
+    if extension == "json"
+        open(file,"r") do f
+            x=JSON.parse(f)
+            x=DataFrame(x)
+            return x
+        end
+        col=size(x)[2]
+        """for i in range(1,length=col)
+            dictionary=x[!,i]
+            for (key,value) in dictionary
+                if size([dictionary[value])[1] > 1
+                    push!(json_data,value[:])
+                else ###want to be able to sort between series based data and non-series data
+                    #by length? by type? cannot tell! need help
+                end
+            end
+        return json_data
+        end"""
+    elseif extension == "csv"
+        data=DataFrame(CSV.File(file))
+        return csv_data
+    end
+end
+
 
 function quantile(data,alpha)
     n=size(data)[1]
@@ -263,6 +286,7 @@ function prim_iteration(data, in_1, in_2, out, alpha, beta)
     return final_box
 end
 
+data=read("results.csv")
 prim_out=prim_iteration(data,1,8,9,0.079,0.08);
 
 #prim_peel,box_mean,box_beta,old_box=peeling_iteration(data,1,8,9,0.08,0.08);
